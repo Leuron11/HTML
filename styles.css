@@ -1,0 +1,208 @@
+/* ---------- Global Styles ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f9f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00bfa6;
+}
+
+/* ---------- Sections ---------- */
+section {
+  padding: 6rem 2rem 3rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #222;
+  border-bottom: 3px solid #00bfa6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* ---------- About Section ---------- */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Damit es bei kleineren Bildschirmen umbrechen kann */
+  gap: 2rem;
+  padding-top: 7rem;
+  text-align: left;
+}
+
+#profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00bfa6;
+}
+
+#about p {
+  max-width: 500px;
+}
+
+
+/* ---------- Projects Section ---------- */
+#projects {
+  background-color: #f1f1f1;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.project {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.project h3 {
+  color: #00bfa6;
+  margin-bottom: 0.5rem;
+}
+
+.project a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Contact Section ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 2rem auto;
+  gap: 0.8rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+input,
+textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #00bfa6;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #009e8c;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  color: #00bfa6;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+#contactschrift{
+    text-align: center;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  #profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+}
