@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhas City Chicken</title>
+</head>
+<body>
+    <header>
+        <img src="#" alt="Bild" id="header-img">
+    <!-- Hauptüberschrift -->
+    <div>
+      <h1>Zum Guten Bissen</h1>
+
+      <!-- Navigation mit zwei "Headings" / Links zu #menu und #order-form -->
+      <nav aria-label="Hauptnavigation">
+        <a href="#menu" aria-labelledby="menu-heading"><h2 id="menu-heading" style="display:inline">Speisekarte</h2></a>
+        <a href="#order-form" aria-labelledby="order-heading"><h2 id="order-heading" style="display:inline">Bestellen</h2></a>
+      </nav>
+    </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Menu</h2>
+            <article>
+                <img src="">
+                <div>
+                <h3>Chickenwings</h3>
+                <p>rg3rfrfed3f35ewfwe<i>9.99€</i></p>
+                </div>
+            </article>
+            <article>                
+                <img src="">
+                <div>
+                <h3>Chicken tenders</h3>
+                <p>rg3rfrfed3f35ewfwe<i>9.99€</i></p>
+                </div>
+            </article>
+            <article>
+                <img src="">
+                <div>
+                <h3>Pommes</h3>
+                <p>rg3rfrfed3f35ewfwe<i>4.99€</i></p>
+                </div>
+            </article>
+
+        </section>
+        <section>
+            <h2>Place your order</h2>
+            <form>
+        <!-- Number inputs for menu items -->
+        <label for="burger-qty">Classic Cheeseburger Quantity:</label>
+        <input type="number" id="burger-qty" name="burger-qty" min="0" value="0">
+
+        <label for="wrap-qty">Veggie Wrap Quantity:</label>
+        <input type="number" id="wrap-qty" name="wrap-qty" min="0" value="0">
+
+        <label for="pizza-qty">Margherita Pizza Quantity:</label>
+        <input type="number" id="pizza-qty" name="pizza-qty" min="0" value="0">
+
+        <!-- Checkboxes for add-ons -->
+        <fieldset>
+          <legend>Add-Ons / Sides</legend>
+
+          <label><input type="checkbox" name="addon" value="fries"> French Fries (+$2.00)</label>
+          <label><input type="checkbox" name="addon" value="salad"> Side Salad (+$3.00)</label>
+          <label><input type="checkbox" name="addon" value="drink"> Soft Drink (+$1.50)</label>
+        </fieldset>
+
+        <!-- Radio buttons for pickup or delivery -->
+        <fieldset>
+          <legend>Order Type</legend>
+
+          <label><input type="radio" name="order-type" value="pickup" required> Pickup</label>
+          <label><input type="radio" name="order-type" value="delivery"> Delivery</label>
+        </fieldset>
+
+        <!-- Textarea for special requests -->
+        <label for="special-requests">Special Requests:</label>
+        <textarea id="special-requests" name="special-requests" rows="4" placeholder="e.g., no onions, extra cheese"></textarea>
+
+        <!-- Submit button -->
+        <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with lovy by Leuron</p>
+    </footer>
+</body>
+</html>
